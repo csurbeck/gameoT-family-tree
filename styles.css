@@ -1,0 +1,70 @@
+/*
+  Name: Claire Surbeck
+  Date: November 2, 2022
+  Section: CSE 154 AA
+  This styles.css file will be used to apply style to my index.html page for the Game of Thrones
+  family tree generator I am making. It will have specific style for the menu view section and the
+  family tree view section, as well as visual difference for the different levels in the generated
+  family tree and use style to symbolize characters who are coupled together.
+ */
+
+#menu-view {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+footer,
+#menu-view,
+article > article {
+  background-color: white;
+  border: solid black 5px;
+}
+
+body,
+button {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+}
+
+header {
+  font-size: 28px;
+}
+
+body {
+  background-color: #C9B178;
+}
+
+.hidden, .size-hidden {
+  display: none;
+}
+
+#family-tree > article {
+  display: flex;
+  justify-content: center;
+}
+
+article > article {
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  width: 175px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 90%;
+}
+
+.you {
+  background-color: purple;
+}
+
+footer {
+  margin-top: 160px;
+  height: 60px;
+  font-size: 12px;
+}

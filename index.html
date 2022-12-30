@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+  Name: Claire Surbeck
+  Date: November 2, 2022
+  Section: CSE 154 AA
+  This is the index.html page that contains the content for building my Game of Thrones family tree
+  generator. It contains a menu page and a generator page.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GoT Family Tree</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Game of Thrones Family Tree</h1>
+    </header>
+    <main>
+      <section id="menu-view">
+        <article>
+          <h2>Generate your family tree of Game of Thrones characters!</h2>
+          <h3>Do you want to generate a big family tree or a small one?</h3>
+          <p>
+            <label><input type="radio" name="size" value="small" checked> Small</label>
+            <label><input type="radio" name="size" value="big"> Big</label>
+          </p>
+          <h3>Do you want to be a male or female character?</h3>
+          <p>
+            <label><input type="radio" name="gender" value="male" checked> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </p>
+          <p>
+            Click the <span>Generate</span> button to create your family tree!
+          </p>
+          <button id="generate-btn">Generate</button>
+        </article>
+      </section>
+      <section id="tree-view" class="hidden">
+        <p></p>
+        <section id="family-tree">
+          <h3 class="size-hidden">Your Grandparents</h3>
+          <article id="grandparents">
+          </article>
+          <h3>Your Parents</h3>
+          <article id="parents">
+          </article>
+          <h3>You and your Siblings</h3>
+          <article id="kids">
+          </article>
+          <h3 class="size-hidden">Your Kids</h3>
+          <article id="grandkids">
+          </article>
+          <button id="back-btn">Menu Page</button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>This site was made using <a href="https://anapioficeandfire.com/">An API of Ice and Fire</a></p>
+      <p>View image sources <a href="sources.html">here</a></p>
+    </footer>
+  </body>
+</html>
